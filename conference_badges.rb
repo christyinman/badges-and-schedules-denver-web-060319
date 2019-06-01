@@ -8,12 +8,6 @@ def batch_badge_creator(attendees)
   badges
 end  
 
-def rooms(name, room)
-  room = 1
-  "Hello, #{name}! You'll be assigned to room #{room}."
-  room += 1
-end
-
 def assign_rooms(attendees)
   room_assignments = []
   attendees.each_with_index { |name, room| 
@@ -22,7 +16,7 @@ def assign_rooms(attendees)
   room_assignments
 end  
 
-def printer
-  puts batch_badge_creator
-  puts assign_rooms
+def printer(x)
+  puts batch_badge_creator(x)
+  puts assign_rooms(x)
 end  
