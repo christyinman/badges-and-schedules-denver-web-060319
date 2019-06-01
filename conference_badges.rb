@@ -15,10 +15,11 @@ def rooms(name, room)
 end
 
 def assign_rooms(attendees)
+  room_assignments = []
   attendees.each_with_index { |name, room| 
     puts "Hello, #{name}! You'll be assigned to room #{room + 1}!"
   }
-  #room_assignments
+  room_assignments
 end  
 
 def printer
